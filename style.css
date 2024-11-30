@@ -1,0 +1,105 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #f5f5f5;
+    background-color: #121212; /* Black background */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ff6f61; /* Accent color */
+}
+
+a {
+    color: #ff6f61;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #fff;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+.section {
+    padding: 4rem 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project {
+    background-color: #1f1f1f;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    background-color: #292929;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1f1f1f;
+    color: #f5f5f5;
+    font-size: 0.9rem;
+}
+.profile-pic {
+    width: 300px; /* Adjust size as needed */
+    height: 400px;
+    border-radius: 10%; /* Makes the image circular */
+    margin-right: 20px;
+    float: left; /* Align image with text */
+}
+a:hover {
+    color: #00bcd4; /* Change text color on hover */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.profile-pic:hover {
+    transform: scale(1.1); /* Slight zoom-in effect */
+    transition: transform 0.3s ease;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
